@@ -1613,7 +1613,8 @@ function resizeText () {
     var tempItemClass = '.' + 'item' + i // Get the item (button) class to refer to individual buttons
     $(tempItemClass).textfill({ // Use the textfill.js library to resize the button text.
       widthOnly: true, // Resize only text width
-      maxFontPixels: 28 // Set maximum font size
+      maxFontPixels: 28, // Set maximum font size
+      allowOverflow: true
     })
   }
 }
